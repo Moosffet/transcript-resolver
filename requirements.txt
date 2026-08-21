@@ -1,0 +1,13 @@
+faster-whisper==1.0.3
+pyannote.audio==3.3.2
+python-docx==1.1.2
+requests==2.32.3
+numpy<2
+huggingface_hub==0.25.2
+
+# IMPORTANTE: instale o torch e o torchaudio (CPU) SEPARADAMENTE, ANTES deste
+# arquivo, com versões fixas e compatíveis entre si e com o pyannote.audio:
+#   pip install torch==2.1.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cpu
+#
+# Versões mais novas de torchaudio mudaram a API interna e quebram o
+# pyannote.audio 3.3.2 (erro: "module 'torchaudio' has no attribute 'AudioMetaData'").
